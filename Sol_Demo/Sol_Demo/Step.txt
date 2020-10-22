@@ -1,0 +1,24 @@
+﻿Step 1:
+Create a Hubs folder in the solution and Add ChatHub class inside the Hub folder. [Check Source Code]
+
+Step 2:
+Configure SingleR in StartUp.cs fille.
+	2.1 Add following service in ConfigureService method
+
+	services.AddSignalR();
+
+	2.2. Add following middleware in Configure method, inside the UseEndpoints
+
+	endpoints.MapHub<ChatHub>("/chathub");
+
+Step 3:
+Create a ChatController and add a view. [Check Source Code]
+
+Step 4:
+Go to wwwroot folder and add SignalR Client Library by using Client Side Library.
+
+Step 5:
+Create chat.js file in js folder inside the wwwroot [Check Source Code] 
+
+Step 6:
+Call chat.js in Index.chtml. [Check Source Code]

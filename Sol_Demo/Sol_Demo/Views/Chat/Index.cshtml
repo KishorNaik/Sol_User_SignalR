@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Chat</h1>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-12 col-md-12">
+            <div class="form-group">
+                <label>User</label>
+                <input id="txtUser" type="text" class="form-control" />
+                <button id="btnJoin" class="btn btn-primary">Join</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12 col-md-12">
+            <div class="form-group">
+                <label>User Connected List</label>
+                <select id="ddlUserList"></select>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12 col-md-12">
+            <div class="form-group">
+                <label>Message</label>
+                <input id="txtMessage" type="text" class="form-control" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-12">
+            <input id="btnSendMessage" type="button" value="Send Message" />
+        </div>
+    </div>
+    <div class="row">
+        <hr />
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-12">
+            <ul id="messageList"></ul>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+
+    <script src="~/js/chat.js"></script>
+
+}
